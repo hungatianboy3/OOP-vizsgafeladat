@@ -27,7 +27,7 @@ class Autokolcsonzo():
                 berlo_nev = input("Adja meg a bérlő nevét: ")
                 while True:
                     berlesek_list = []
-                    ber_datum = input("Adja meg a bérlés dátumát ebben a formátumban: 2005-04-29")
+                    ber_datum = input("Adja meg a bérlés dátumát ebben a formátumban: 2005-04-29  ")
                     if len(ber_datum) == 10 and ber_datum.count("-") == 2:
                         
                         for berles in self.autok[auto_kival].berlesek:
@@ -49,7 +49,6 @@ class Autokolcsonzo():
     def auto_berles_lemondasa(self):
         index_auto = 0
         
-        print(">>>A lemondani kívánt autó sorszámát írja be a bérléshez.<<<")
         print("Sorszám  Típus  Rendszám  Bérleti díj/Nap")
         auto_berles_lemondas_lista = []
         
