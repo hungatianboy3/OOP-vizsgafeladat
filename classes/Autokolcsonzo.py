@@ -32,7 +32,6 @@ class Autokolcsonzo():
                         
                         for berles in self.autok[auto_kival].berlesek:
                             berlesek_list.append(berles.datum)
-                        print(berlesek_list)
                         
                         if ber_datum not in berlesek_list:
                             self.autok[auto_kival].berlesek.append(Berles(ber_datum,berlo_nev))
